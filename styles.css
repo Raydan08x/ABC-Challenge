@@ -1,0 +1,190 @@
+/*  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f7f9fc;
+    color: #333;
+    padding-bottom: 40px;
+}
+
+/* 
+   Barra de Navegación 
+    */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    font-size: 24px;
+    color: #4f46e5; 
+    font-weight: 700;
+}
+
+.navbar .contador {
+    font-size: 16px;
+    background-color: #e0e7ff;
+    color: #4338ca;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* Botones de Filtro
+  */
+.filtros-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.filtros-container button {
+    padding: 10px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #4f46e5;
+    border: 2px solid #4f46e5;
+    transition: all 0.2s ease;
+}
+
+.filtros-container button:hover {
+    background-color: #4f46e5;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* 
+   Galería de Letras 
+    */
+.galeria-letras {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Contenedor  */
+.card {
+    background-color: transparent;
+    height: 220px;
+    perspective: 1000px; /* Crea el espacio 3D */
+    cursor: pointer;
+}
+
+/* Contenedor */
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+}
+
+/* voltea la tarjeta  */
+.card.volteada .card-inner {
+    transform: rotateY(180deg);
+}
+
+/*  ambas caras */
+.card-frente, .card-dorso {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden; 
+    border-radius: 16px;
+    border: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Muestra la letra grande */
+.card-frente {
+    background-color: #ffffff;
+    color: #1e1b4b;
+}
+
+.card-frente h1 {
+    font-size: 64px;
+    font-weight: 800;
+}
+
+/*Muestra la palabra e imagen */
+.card-dorso {
+    background-color: #ffffff;
+    color: #111827;
+    transform: rotateY(180deg); /* Ya inicia al revés */
+    padding: 10px;
+}
+
+.card-dorso img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.card-dorso h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #374151;
+}
+
+/*  diferenciar las vocales */
+.card[data-tipo="vocal"] .card-frente {
+    background: linear-gradient(135deg, #ffffff 0%, #f5f3ff 100%);
+    border: 2px solid #ddd6fe;
+}
+
+/* 
+    (Footer)
+   */
+.seccion-equipo {
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+    background-color: #ffffff;
+    border-top: 1px solid #e5e7eb;
+}
+
+.seccion-equipo h3 {
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.seccion-equipo p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #4f46e5;
+}
+
+/* ocultar filtro */
+.hidden {
+    display: none !important;
+}
