@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #f7f9fc;
+    background-color: #b4b4b4;
     color: #333;
     padding-bottom: 40px;
 }
@@ -145,7 +145,7 @@ body {
 .card-dorso img {
     width: 90px;
     height: 90px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 12px;
     margin-bottom: 12px;
 }
@@ -168,9 +168,14 @@ body {
 .seccion-equipo {
     margin-top: 50px;
     padding: 30px;
-    text-align: center;
     background-color: #ffffff;
     border-top: 1px solid #e5e7eb;
+
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+    justify-content: center; 
+    text-align: center;
 }
 
 .seccion-equipo h3 {

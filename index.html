@@ -10,294 +10,377 @@
 
 <body>
 
-<nav>
-    <h1>ABCDario</h1>
+    <nav class="navbar">
+        <h1>ABCDario</h1>
 
-    <p>
-        <span id="completed-count">0</span> de 26 letras
-    </p>
-</nav>
+        <div class="contador">
+            <span id="completed-count">0</span> de 26 letras
+        </div>
+    </nav>
 
-<section class="filtros">
-    <button onclick="filtrar('vocales')">Vocales</button>
-    <button onclick="filtrar('todas')">Todas</button>
-</section>
 
-<section class="galeria">
+    <section class="filtros-container">
+        <button onclick="filtrar('vocales')">Vocales</button>
+        <button onclick="filtrar('todas')">Todas</button>
+    </section>
 
-    <div class="card" data-tipo="vocal" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>A</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Aguacate">
-                <h3>Aguacate</h3>
+
+    <section class="galeria">
+
+        <!-- A -->
+        <div class="card" data-tipo="vocal" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>A</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://img.magnific.com/vector-gratis/ilustracion-vectorial-colorida-mitades-aguacate_1308-181983.jpg?semt=ais_hybrid&w=740&q=80" alt="Aguacate">
+                    <h3>Aguacate</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="consonante" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>B</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Burro">
-                <h3>Burro</h3>
+        <!-- B -->
+        <div class="card" data-tipo="consonante" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>B</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://www.shutterstock.com/image-vector/cartoon-donkey-vector-cute-illustration-600nw-2663080609.jpg" alt="Burro">
+                    <h3>Burro</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="consonante" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>C</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Casa">
-                <h3>Casa</h3>
+        <!-- C -->
+        <div class="card" data-tipo="consonante" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>C</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5iSajDjYfPrDclK_jkR5nY356tBO0r7rmGg&s" alt="Casa">
+                    <h3>Casa</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="consonante" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>D</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Dados">
-                <h3>Dados</h3>
+        <!-- D -->
+        <div class="card" data-tipo="consonante" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>D</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://st.depositphotos.com/17675380/58813/v/450/depositphotos_588139076-stock-illustration-group-dices-children-boy-girl.jpg" alt="Dados">
+                    <h3>Dados</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="vocal" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>E</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Elefante">
-                <h3>Elefante</h3>
+        <!-- E -->
+        <div class="card" data-tipo="vocal" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>E</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://img.magnific.com/vector-gratis/lindo-personaje-dibujos-animados-elefante_1308-140184.jpg?semt=ais_hybrid&w=740&q=80" alt="Elefante">
+                    <h3>Elefante</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="consonante" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>F</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Farol">
-                <h3>Farol</h3>
+        <!-- F -->
+        <div class="card" data-tipo="consonante" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>F</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://s.alicdn.com/@sc04/kf/H96dcbf3465b340daa9bcde30228e308co/Children-s-Eve-Gift-Santa-Motif-LED-Light-Luminous-Lantern-Desk-Portable-Christmas-Lamp-Led-Light-for-Xmas-Decoration.jpg_300x300.jpg" alt="Farol">
+                    <h3>Farol</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="consonante" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>G</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Gato">
-                <h3>Gato</h3>
+        <!-- G -->
+        <div class="card" data-tipo="consonante" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>G</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://static.vecteezy.com/system/resources/previews/013/089/641/non_2x/illustration-of-cute-colored-cat-cat-cartoon-image-in-eps10-format-suitable-for-children-s-book-design-elements-introduction-of-cats-to-children-books-or-posters-about-animal-vector.jpg" alt="Gato">
+                    <h3>Gato</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="consonante" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>H</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Hormiga">
-                <h3>Hormiga</h3>
+        <!-- H -->
+        <div class="card" data-tipo="consonante" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>H</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://www.shutterstock.com/image-illustration/cartoon-cute-ant-isolated-on-260nw-2255692559.jpg" alt="Hormiga">
+                    <h3>Hormiga</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="vocal" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>I</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Iglesia">
-                <h3>Iglesia</h3>
+        <!-- I -->
+        <div class="card" data-tipo="vocal" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>I</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://img.magnific.com/vector-gratis/ilustracion-edificio-iglesia-degradado_23-2149440559.jpg?semt=ais_hybrid&w=740&q=80" alt="Iglesia">
+                    <h3>Iglesia</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="consonante" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>J</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Jaguar">
-                <h3>Jaguar</h3>
+        <!-- J -->
+        <div class="card" data-tipo="consonante" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>J</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://img.magnific.com/vector-gratis/jarra-pegatina-agua-sobre-fondo-blanco_1308-68841.jpg" alt="Jarra">
+                    <h3>Jarra</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="consonante" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>K</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Kiwi">
-                <h3>Kiwi</h3>
+        <!-- K -->
+        <div class="card" data-tipo="consonante" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>K</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://img.magnific.com/vector-gratis/frutas-kiwi-fondo-blanco-icono-aislado_24877-83723.jpg?semt=ais_hybrid&w=740&q=80" alt="Kiwi">
+                    <h3>Kiwi</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="consonante" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>L</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="León">
-                <h3>León</h3>
+        <!-- L -->
+        <div class="card" data-tipo="consonante" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>L</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://static.vecteezy.com/system/resources/previews/057/148/995/non_2x/cartoon-african-lion-cute-animal-lion-suitable-for-children-s-books-sticker-mascot-logo-illustration-on-white-background-vector.jpg" alt="León">
+                    <h3>León</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="consonante" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>M</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Mamá">
-                <h3>Mamá</h3>
+        <!-- M -->
+        <div class="card" data-tipo="consonante" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>M</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://static.vecteezy.com/system/resources/previews/008/389/785/non_2x/cartoon-happy-mother-hugging-her-baby-free-vector.jpg" alt="Mamá">
+                    <h3>Mamá</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="consonante" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>N</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Naranja">
-                <h3>Naranja</h3>
+        <!-- N -->
+        <div class="card" data-tipo="consonante" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>N</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://i.pinimg.com/474x/f2/00/cd/f200cdc97b958ebfb2e3bf3c62010d8f.jpg" alt="Naranja">
+                    <h3>Naranja</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="vocal" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>O</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Oso">
-                <h3>Oso</h3>
+        <!-- O -->
+        <div class="card" data-tipo="vocal" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>O</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://static.vecteezy.com/system/resources/previews/067/855/225/non_2x/cute-cartoon-bear-waving-and-smiling-adorable-animal-character-for-kids-illustration-educational-materials-nursery-prints-greeting-cards-and-children-s-designs-vector.jpg" alt="Oso">
+                    <h3>Oso</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="consonante" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>P</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Pato">
-                <h3>Pato</h3>
+        <!-- P -->
+        <div class="card" data-tipo="consonante" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>P</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://thumbs.dreamstime.com/b/el-pato-lindo-del-beb%C3%A9-levant%C3%B3-sus-alas-65808327.jpg" alt="Pato">
+                    <h3>Pato</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="consonante" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>Q</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Queso">
-                <h3>Queso</h3>
+        <!-- Q -->
+        <div class="card" data-tipo="consonante" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>Q</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://i.pinimg.com/236x/75/33/d3/7533d380bbc65467d4cc8dda42791ba2.jpg" alt="Queso">
+                    <h3>Queso</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="consonante" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>R</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Rana">
-                <h3>Rana</h3>
+        <!-- R -->
+        <div class="card" data-tipo="consonante" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>R</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://st.depositphotos.com/2945617/57391/v/450/depositphotos_573910572-stock-illustration-cartoon-cute-baby-frog-sitting.jpg" alt="Rana">
+                    <h3>Rana</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="consonante" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>S</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Sol">
-                <h3>Sol</h3>
+        <!-- S -->
+        <div class="card" data-tipo="consonante" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>S</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://static.vecteezy.com/system/resources/previews/003/206/498/non_2x/cute-smiling-sun-face-funny-sun-character-for-kids-vector.jpg" alt="Sol">
+                    <h3>Sol</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="consonante" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>T</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Tetero">
-                <h3>Tetero</h3>
+        <!-- T -->
+        <div class="card" data-tipo="consonante" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>T</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://img.magnific.com/vector-gratis/set-biberones-chupar_1284-22974.jpg?semt=ais_hybrid&w=740&q=80" alt="Tetero">
+                    <h3>Tetero</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="vocal" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>U</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Uva">
-                <h3>Uva</h3>
+        <!-- U -->
+        <div class="card" data-tipo="vocal" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>U</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://static.vecteezy.com/system/resources/previews/027/205/109/non_2x/kids-drawing-cartoon-illustration-grapes-fruit-icon-isolated-on-white-background-vector.jpg" alt="Uva">
+                    <h3>Uva</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="consonante" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>V</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Vaca">
-                <h3>Vaca</h3>
+        <!-- V -->
+        <div class="card" data-tipo="consonante" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>V</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://static.vecteezy.com/system/resources/previews/006/326/260/non_2x/cow-cartoon-colored-animal-illustration-free-vector.jpg" alt="Vaca">
+                    <h3>Vaca</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="consonante" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>W</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Waffle">
-                <h3>Waffle</h3>
+        <!-- W -->
+        <div class="card" data-tipo="consonante" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>W</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://www.conmishijos.com/assets/posts/8000/8980-receta-de-gofres-caseros-para-cocinar-con-ninos.jpg" alt="Waffle">
+                    <h3>Waffle</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="consonante" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>X</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Xilófono">
-                <h3>Xilófono</h3>
+        <!-- X -->
+        <div class="card" data-tipo="consonante" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>X</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://m.media-amazon.com/images/I/71d7m843sfL.jpg" alt="Xilófono">
+                    <h3>Xilófono</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="consonante" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>Y</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Yuca">
-                <h3>Yuca</h3>
+        <!-- Y -->
+        <div class="card" data-tipo="consonante" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>Y</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://thumbs.dreamstime.com/b/plantas-de-mandioca-yuca-con-hojas-y-tub%C3%A9rculos-grabado-vectorial-159973049.jpg" alt="Yuca">
+                    <h3>Yuca</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="card" data-tipo="consonante" onclick="voltear(this)">
-        <div class="card-inner">
-            <div class="card-frente"><h1>Z</h1></div>
-            <div class="card-dorso">
-                <img src="URL_IMAGEN" alt="Zapato">
-                <h3>Zapato</h3>
+        <!-- Z -->
+        <div class="card" data-tipo="consonante" onclick="voltear(this)">
+            <div class="card-inner">
+                <div class="card-frente">
+                    <h1>Z</h1>
+                </div>
+                <div class="card-dorso">
+                    <img src="https://img.freepik.com/vector-premium/ilustracion-vectorial-moderna-zapatos-aislada-fondo-blanco_1138840-4990.jpg" alt="Zapato">
+                    <h3>Zapato</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-</section>
+    </section>
 
-<section class="equipo">
-    <h2>Equipo de Rescate</h2>
+    <!-- EQUIPO -->
+    <section class="seccion-equipo">
+        <h2>Equipo de Rescate</h2>
+        <p>Jaime Peña</p>
+        <p>Carlos Madero</p>
+        <p>Irma Lucia Cantillo</p>
+        <p>Laura Barona</p>
+        <p>Yesmith Sarmiento</p>
 
-    <p>Jaime Peña</p>
-    <p>Carlos Madero</p>
-    <p>Lucia</p>
-    <p>Laura Sofia</p>
-</section>
+    </section>
 
-<script src="funciones.js"></script>
-<script src="index.js"></script>
+    <script src="funciones.js"></script>
+    
 
 </body>
+
 </html>
